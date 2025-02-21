@@ -4,44 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RGB e CMYK</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
-        <h1>Informações sobre RGB e CMYK</h1>
+        <h1 id="titulos">RGB e CMYK</h1>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#rgb">RGB</a></li>
-            <li><a href="#cmyk">CMYK</a></li>
-        </ul>
-    </nav>
+
 
     <main>
         <section id="rgb">
             <h2>RGB (Red, Green, Blue)</h2>
-            <p>O modelo RGB é utilizado em dispositivos eletrônicos como monitores e câmeras. A combinação das cores primárias (vermelho, verde e azul) gera diferentes cores.</p>
-            <ul>
+            <p>O modelo RGB (Red, Green, Blue), que em português significa Vermelho, Verde, Azul, é um modelo de 
+                cores aditivo, ou seja, ele cria cores combinando diferentes intensidades de luz nessas três cores básicas. Esse modelo é 
+                muito utilizado em dispositivos eletrônicos como monitores, TVs, câmeras,etc.
+                <p> Quando essas cores de luz são combinadas em diferentes proporções, elas criam uma variedade infinita de cores.
+
+                    Vermelho, Verde e Azul são chamados de cores primárias de luz no modelo aditivo.
+                    Ao misturar essas cores em diferentes intensidades, você consegue criar várias cores.
+                    O modelo funciona com intensidades de cada cor, que variam de 0 a 255 (no padrão de 8 bits), ou seja:
+                    0 significa a ausência da cor.
+                    255 significa a intensidade máxima da cor.</p>
+                <ul>
                 <li><strong>Vermelho:</strong> 255, 0, 0</li>
                 <li><strong>Verde:</strong> 0, 255, 0</li>
                 <li><strong>Azul:</strong> 0, 0, 255</li>
             </ul>
-            <img src="rgb-example.jpg" alt="Exemplo RGB">
+            <img src="img_01.jpg" alt="Exemplo RGB">
         </section>
 
         <section id="cmyk">
             <h2>CMYK (Cyan, Magenta, Yellow, Black)</h2>
-            <p>O modelo CMYK é utilizado em impressão e representa as cores em termos de ciano, magenta, amarelo e preto.</p>
-            <ul>
+            <p>O modelo CMYK (Cyan, Magenta, Yellow, Key/Black), em português Ciano, Magenta, Amarelo, Preto, é um modelo de cores 
+                subtrativo. Esse modelo é usado principalmente em 
+                impressão, ou seja, quando você imprime algo 
+                em papel ou outros materiais, o modelo CMYK é o mais comum..</p>
+            <p>No modelo CMYK, as cores são geradas pela subtração das cores primárias de luz, que são Ciano (C), Magenta (M) e Amarelo (Y). O "K" representa o Preto e é adicionado para melhorar a profundidade da cor e garantir que as imagens impressas sejam mais nítidas e com maior contraste.
+
+                Ciano (C), Magenta (M) e Amarelo (Y) são as cores primárias no modelo subtrativo.
+                Preto (K) é incluído porque, no processo de impressão, as cores primárias não conseguem criar um preto profundo com apenas a mistura delas.</p>
+                <ul>
                 <li><strong>Ciano:</strong> 100%, 0%, 0%, 0%</li>
                 <li><strong>Magenta:</strong> 0%, 100%, 0%, 0%</li>
                 <li><strong>Amarelo:</strong> 0%, 0%, 100%, 0%</li>
                 <li><strong>Preto:</strong> 0%, 0%, 0%, 100%</li>
             </ul>
-            <img src="cmyk-example.jpg" alt="Exemplo CMYK">
+            <img src="img_02.jpg" alt="Exemplo CMYK">
         </section>
+        <main>
+            <section id="rgb">
+                <h2>Comparação entre os modelos: </h2>
+                <ul>
+               
+                    
+                    <h2>RGB</h2>
+                    <li>Modelo aditivo, ou seja, as cores são criadas pela adição de luz.
+                        Quando as três cores de luz (vermelho, verde e azul) são combinadas em diferentes intensidades, elas geram novas cores.
+                        Quando todas as cores estão em intensidade máxima (255 para cada uma), o resultado é branco. Já a ausência de luz (0, 0, 0) resulta em preto.
+                        
+                   <h2>CMYK</h2>
+                        <li> Modelo subtrativo, onde as cores são formadas pela subtração da luz.
+                        A ideia é que as cores de tinta subtraem (absorvem) a luz refletida da superfície, resultando em uma cor.
+                        A mistura de ciano, magenta e amarelo pode criar várias cores, mas não gera um preto perfeito; por isso, o preto (K) é adicionado para melhorar as sombras e detalhes escuros.
+                        Quando as cores estão em intensidade máxima (100% de cada), o resultado é preto (ou um tom muito escuro), enquanto a ausência de tinta resulta em branco.
+                    
+                </ul>
+                <imgsrc="img3.jpg" alt="Exemplo RGB">
+            </section>
     </main>
 
     <footer>

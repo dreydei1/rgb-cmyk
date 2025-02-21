@@ -1,44 +1,32 @@
-/* Resetando padrões de margem e preenchimento */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos gerais do corpo */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: rgb(113, 48, 48);
+    color: black;
     line-height: 1.6;
 }
 
-/* Cabeçalho */
 header {
-    background-color: #333;
+    background-color: rgb(71, 2, 2);
     color: white;
     padding: 20px 0;
     text-align: center;
 }
 
-/* Navegação */
 nav {
-    background-color: #444;
+    background-color:rgb(125, 61, 61);
     padding: 10px;
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
 
 nav ul li a {
-    color: white;
+    color:white;
     text-decoration: none;
     font-size: 18px;
 }
@@ -47,21 +35,19 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Estilo principal */
 main {
     padding: 20px;
 }
 
-/* Seções */
 section {
-    background-color: white;
+    background-color: rgb(231, 229, 229);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
 }
 
 section h2 {
-    color: #444;
+    color: rgba(137, 3, 3, 0.716);
     margin-bottom: 10px;
 }
 
@@ -80,9 +66,8 @@ section img {
     margin-top: 20px;
 }
 
-/* Rodapé */
 footer {
-    background-color: #333;
+    background-color: rgba(145, 20, 20, 0.768);
     color: white;
     padding: 10px 0;
     text-align: center;
