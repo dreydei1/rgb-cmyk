@@ -6,70 +6,83 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(113, 48, 48);
-    color: black;
-    line-height: 1.6;
+    background-color: rgb(188, 220, 248); /* Azul bem claro */
+    color: rgb(33, 150, 243); /* Azul médio */
+    padding: 20px;
 }
 
 header {
-    background-color: rgb(71, 2, 2);
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: rgb(100, 181, 246); /* Azul claro */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 3rem;
     color: white;
-    padding: 20px 0;
-    text-align: center;
 }
 
-nav {
-    background-color:rgb(125, 61, 61);
-    padding: 10px;
-    text-align: center;
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-
-nav ul li a {
-    color:white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-main {
-    padding: 20px;
-}
-
-section {
-    background-color: rgb(231, 229, 229);
-    padding: 20px;
+.imagem img {
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
+}
+
+.topicos {
+    padding: 20px;
+    margin: 15px 0;
     border-radius: 8px;
+    width: 80%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-section h2 {
-    color: rgba(137, 3, 3, 0.716);
+.topicos:nth-of-type(1) {
+    background-color: rgb(70, 130, 180); /* Azul claro */
+    color: rgb(33, 150, 243); /* Azul médio */
+}
+
+.topicos:nth-of-type(2) {
+    background-color: rgb(70, 130, 180); /* Azul céu claro */
+    color: white;
+}
+
+.topicos:nth-of-type(3) {
+    background-color: rgb(70, 130, 180); /* Azul aço */
+    color: white;
+}
+
+.topicos:nth-of-type(4) {
+    background-color: rgb(70, 130, 180); /* Azul claro esbranquiçado */
+    color: rgb(255, 255, 255); /* Azul médio */
+}
+
+.topicos h2 {
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
-section p {
-    margin-bottom: 10px;
+.topicos p, .topicos ul {
+    font-size: 1rem;
 }
 
-section ul {
+.topicos ul {
+    list-style-type: disc;
     margin-left: 20px;
 }
-
-section img {
+img {
     display: block;
     max-width: 100%;
     height: auto;
     margin-top: 20px;
 }
 
-footer {
-    background-color: rgba(145, 20, 20, 0.768);
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    margin-top: 20px;
-}
